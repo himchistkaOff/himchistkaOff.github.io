@@ -1,0 +1,143 @@
+@media(max-width: 600px){
+    .text{
+        flex-size:14px;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5;
+    outline: none;
+    border: none;
+    text-decoration-color: black;
+}
+:root{
+    --color-hover: red;
+    --font-4: clamp(1.4rem , 0.8vw + 1.4rem, 1.5rem);
+    --font-3: clamp(1.6rem, 1vw + 1.6rem, 1.8rem);
+    --font-2_5: clamp(1.7rem, 1.5vw + 1.7rem, 2rem);
+    --font-2: clamp(1.8rem, 2vw + 1.8rem, 2.5rem);
+    --font-1: clamp(2rem, 3vw + 2rem, 3.5rem);
+}
+.goto{
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+}
+.goto a img{
+    width: 2rem;
+    border: 0.2rem goldenrod solid;
+    border-radius: 1rem;
+}
+/*header */
+header{
+    background: url(fon.webp) no-repeat center/cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:var(--font-3);
+    padding: 1rem;
+
+}
+
+nav a{
+    font-size:var(--font-2_5);
+}
+nav a:hover{
+    color: var(--color-hover);
+}
+h1{
+    font-size:var(--font-1);
+    color: black;
+}
+main {
+    text-align: center;
+}
+/*hero*/
+.hero{
+    background: #2f2f32;
+    padding: 2rem;
+
+}
+.hero h2{
+    color:goldenrod;
+    font-size:var(--font-2);
+}
+.hero p{
+    color:goldenrod;
+    font-size:var(--font-2_5);
+}
+.photo{
+    width: clamp(15rem,50%,70%);
+    border: goldenrod 0.2rem solid;
+    border-radius: 2rem;
+}
+/*service*/
+.services{
+    background: lemonchiffon;
+    color: black;
+    font-size:var(--font-2_5);
+    border: 0.2rem black solid;
+    padding: 2rem;
+}
+.check{
+    width: 4rem;
+    border-radius: 2rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+ul li{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-size:var(--font-2_5);
+    font-weight: bold;
+    padding: 1rem;
+}
+ul li p{
+    font-size:var(--font-3);
+    text-align: justify;
+    font-weight: normal;
+}
+.services .items{
+    flex-direction: column;
+}
+.gallery{
+    background: #2f2f32;
+    padding: 2rem;
+}
+/*gelary*/
+.gallery{
+    color:goldenrod;
+    font-size:var(--font-2);
+}
+.gallery .img{
+    width: clamp(15rem,30%,70%);
+    border: goldenrod 0.2rem solid;
+    border-radius: 2rem;
+    margin: 0.5rem;
+
+}
+
+/*contact*/
+.contact{
+    background: lemonchiffon;
+    color: black;
+    font-size:var(--font-2);
+    border: 0.2rem black solid;
+    padding: 2rem;
+}
+button {
+    background: lemonchiffon;
+    color: black;
+    font-size:var(--font-2_5);
+    color: blue;
+}
+button:hover {
+    color: var(--color-hover);
+}
